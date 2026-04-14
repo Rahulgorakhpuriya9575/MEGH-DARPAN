@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Megh-Darpan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="main-container">
+
+<!-- LEFT PANEL -->
+<div class="left-panel">
+
+<h1>Megh-Darpan</h1>
+
+<div class="search-box">
+<input type="text" id="city" placeholder="Enter city name">
+<button onclick="getWeather()">Search</button>
+</div>
+
+<button class="location-btn" onclick="getLocationWeather()">
+📍 Use Current Location
+</button>
+
+<div class="city-card">
+
+<img id="cityImage">
+
+<div class="city-info">
+<h2 id="cityName">City</h2>
+<p id="currentDate"></p>
+<p id="currentTime"></p>
+</div>
+
+<div class="temp-box">
+<img id="icon">
+<h1 id="temp">--°C</h1>
+<p id="desc"></p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- RIGHT PANEL -->
+<div class="right-panel">
+
+<!-- TOP BOXES -->
+<div class="top-cards">
+
+<div class="card">
+<p>🌅 Sunrise</p>
+<h3 id="sunrise">--</h3>
+</div>
+
+<div class="card">
+<p>🌇 Sunset</p>
+<h3 id="sunset">--</h3>
+</div>
+
+</div>
+
+<!-- MIDDLE BOXES -->
+<div class="middle-cards">
+
+<div class="card">
+<p>💧 Humidity</p>
+<h3 id="humidity"></h3>
+</div>
+
+<div class="card">
+<p>🌬 Wind</p>
+<h3 id="wind"></h3>
+</div>
+
+<div class="card">
+<p>🧭 Pressure</p>
+<h3 id="pressure"></h3>
+</div>
+
+<div class="card">
+<p>🌫 AQI</p>
+<h3 id="aqi"></h3>
+</div>
+
+</div>
+
+
+<!-- FORECAST -->
+<div class="forecast-box">
+
+<h2>5 Day Forecast</h2>
+
+<div id="forecast" class="forecast"></div>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
